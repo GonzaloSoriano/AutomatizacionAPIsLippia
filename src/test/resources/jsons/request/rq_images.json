@@ -1,0 +1,8 @@
+{
+  "headers": {
+    "Content-Type": "application/json",
+    "x-api-key": "49b31944-78cf-43e3-830f-50ed819f1d5c"
+  },
+  "urlParameters": {},
+  "endpoint": "v1/images/5hJs/breeds"
+}

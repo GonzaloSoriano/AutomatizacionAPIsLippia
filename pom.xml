@@ -20,13 +20,20 @@
         <base.api.url>https://reqres.in/api/users</base.api.url>
         <cucumber.stepsDefinitions>--glue ar/steps</cucumber.stepsDefinitions>
 		<cucumber.hooks>--glue com/crowdar/bdd/cukes --glue ar/apiExampleProject/hook</cucumber.hooks>
-		<cucumber.tags>@Success</cucumber.tags>
+		<cucumber.tags>@CatApi</cucumber.tags>
 		<cucumber.reporters>--plugin pretty</cucumber.reporters>
 		<crowdar.cucumber.option>src/test/resources/features ${cucumber.hooks} ${cucumber.stepsDefinitions} --tags 'not @Ignore' --tags ${cucumber.tags} ${cucumber.reporters}</crowdar.cucumber.option>
         <crowdar.projectType>API</crowdar.projectType>
 
     </properties>
     <profiles>
+        <profile>
+            <id>academy</id>
+            <activation></activation>
+            <properties>
+                <base.api.url>https://api.thecatapi.com/</base.api.url>
+            </properties>
+        </profile>
         <profile>
             <id>Secuencial</id>
             <activation>

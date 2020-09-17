@@ -1,21 +1,20 @@
 package api.config;
 
-import services.ResponseHeadersService;
-import services.UserService;
+import services.BreedsService;
+import services.CategoryService;
 
 public enum EntityConfiguration {
 
-    USER {
+    CATEGORY {
         @Override
         public Class<?> getEntityService() {
-            return UserService.class;
+            return CategoryService.class;
         }
-
     },
-    RESPONSE_HEADERS {
+    BREED {
         @Override
         public Class<?> getEntityService() {
-            return ResponseHeadersService.class;
+            return BreedsService.class;
         }
     };
 
