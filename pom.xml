@@ -29,9 +29,12 @@
     <profiles>
         <profile>
             <id>academy</id>
-            <activation></activation>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
             <properties>
                 <base.api.url>https://api.thecatapi.com/</base.api.url>
+                <apiExample.runner>testng.xml</apiExample.runner>
             </properties>
         </profile>
         <profile>
